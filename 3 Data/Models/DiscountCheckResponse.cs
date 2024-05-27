@@ -2,7 +2,6 @@
 
 public class DiscountCheckResponse
 {
-    public decimal OriginalPrice { get; set; }
     public decimal DiscountedPrice { get; set; }
     
 }

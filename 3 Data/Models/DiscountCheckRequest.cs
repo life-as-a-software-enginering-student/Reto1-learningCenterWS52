@@ -3,6 +3,7 @@
 public class DiscountCheckRequest
 {
     public string MembershipStatus { get; set; }
+    public decimal OriginalPrice { get; set; }
     public string ShoeBrand { get; set; }
     public string ShoeSeason { get; set; }
     public bool IsFirstPurchase { get; set; }

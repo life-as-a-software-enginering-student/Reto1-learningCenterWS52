@@ -3,50 +3,54 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using _2_Domain;
+using _3_Data;
 using _3_Data.Models;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
-namespace _1_API.Properties
+namespace _1_API.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
     public class DiscountController : ControllerBase
     {
-        private DiscountChecker _discountChecker;
+        private IDiscountCheckerDomain _discountCheckerDomain;
+        private IDiscountCheck _discountCheckRequest;
 
-        public DiscountController(DiscountChecker discountChecker)
+        public DiscountController(IDiscountCheckerDomain discountCheckerDomain, IDiscountCheck discountCheckRequest)
         {
-            _discountChecker = discountChecker;
+            _discountCheckerDomain = discountCheckerDomain;
+            _discountCheckRequest = discountCheckRequest;
         }
+
 
         // POST: api/discount/check
         [HttpPost("check")]
         public DiscountCheckResponse Post([FromBody] DiscountCheckRequest request)
         {
-            return _discountChecker.CheckDiscount(request);
+            return _discountCheckerDomain.CheckDiscount(request);
         }
 
 
         // GET: api/membership/status
         [HttpGet("membership/status")]
-        public IEnumerable<string> GetMembershipStatuses()
+        public IEnumerable<DiscountCheckRequest> GetMembershipStatuses()
         {
-            return new List<string> { "premium", "regular" };
+            return _discountCheckRequest.GetMembershipStatus();
         }
 
         // GET: /api/shoe/brands
         [HttpGet("shoe/brands")]
-        public IEnumerable<string> GetShoeBrands()
+        public IEnumerable<DiscountCheckRequest> GetShoeBrands()
         {
-            return new List<string> { "Nike", "Adidas", "Reebok" };
+            return _discountCheckRequest.GetShoeBrand();
         }
 
         // GET: api/shoe/seasons
         [HttpGet("shoe/seasons")]
-        public IEnumerable<string> GetShoeSeasons()
+        public IEnumerable<DiscountCheckRequest> GetShoeSeasons()
         {
-            return new List<string> { "current", "past" };
+            return _discountCheckRequest.GetShoeSeasons();
         }
     }
 }

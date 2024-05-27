@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Sharon\\Downloads\\uni\\web\\clases\\reto1\\3 Data\\3 Data.csproj": {}
+    "C:\\Users\\Sharon\\Downloads\\uni\\web\\clases\\retos\\reto1\\3 Data\\3 Data.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Sharon\\Downloads\\uni\\web\\clases\\reto1\\3 Data\\3 Data.csproj": {
+    "C:\\Users\\Sharon\\Downloads\\uni\\web\\clases\\retos\\reto1\\3 Data\\3 Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Sharon\\Downloads\\uni\\web\\clases\\reto1\\3 Data\\3 Data.csproj",
+        "projectUniqueName": "C:\\Users\\Sharon\\Downloads\\uni\\web\\clases\\retos\\reto1\\3 Data\\3 Data.csproj",
         "projectName": "3 Data",
-        "projectPath": "C:\\Users\\Sharon\\Downloads\\uni\\web\\clases\\reto1\\3 Data\\3 Data.csproj",
+        "projectPath": "C:\\Users\\Sharon\\Downloads\\uni\\web\\clases\\retos\\reto1\\3 Data\\3 Data.csproj",
         "packagesPath": "C:\\Users\\Sharon\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Sharon\\Downloads\\uni\\web\\clases\\reto1\\3 Data\\obj\\",
+        "outputPath": "C:\\Users\\Sharon\\Downloads\\uni\\web\\clases\\retos\\reto1\\3 Data\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Sharon\\AppData\\Roaming\\NuGet\\NuGet.Config",

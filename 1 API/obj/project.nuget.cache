@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "zoOU8y5gwminEN4G86hF743kPqLXwMdctK0uLzQnNHVJskcmRMmlC8WnIgYvRljPczJ632wxUr+lU6nTQNKGdA==",
+  "dgSpecHash": "trEGNeurEzZ5leX1/7DwSeh2mjaM3/lAgugNhDnJX7wo3bNYHue09VMgDdvRCV7peMpPjDWE8t+ZJm1yTLTaWw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Sharon\\Downloads\\uni\\web\\clases\\reto1\\1 API\\1 API.csproj",
+  "projectFilePath": "C:\\Users\\Sharon\\Downloads\\uni\\web\\clases\\retos\\reto1\\1 API\\1 API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Sharon\\.nuget\\packages\\humanizer\\2.14.1\\humanizer.2.14.1.nupkg.sha512",
     "C:\\Users\\Sharon\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",

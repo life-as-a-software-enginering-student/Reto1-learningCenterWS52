@@ -1,4 +1,5 @@
 using _2_Domain;
+using _3_Data;
 using _3_Data.Models;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -10,7 +11,9 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-builder.Services.AddScoped<DiscountChecker>();
+builder.Services.AddTransient<IDiscountCheck, DiscountCheck>();
+//Para el domain
+builder.Services.AddTransient<IDiscountCheckerDomain, DiscountCheckerDomain>();
 
 var app = builder.Build();
 
