@@ -5,8 +5,8 @@ namespace _2_Domain;
 
 public class DiscountCheckerDomain : IDiscountCheckerDomain
 {
-    private IDiscountCheckerDomain _discountCheckerDomain;
-    public DiscountCheckerDomain(IDiscountCheckerDomain discountCheckerDomain)
+    private IDiscountCheck _discountCheckerDomain;
+    public DiscountCheckerDomain(IDiscountCheck discountCheckerDomain)
     {
         _discountCheckerDomain = discountCheckerDomain;
     }
